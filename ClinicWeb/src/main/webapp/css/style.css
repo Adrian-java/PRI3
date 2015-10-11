@@ -1,0 +1,323 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&subset=latin,latin-ext);
+
+body{
+	font-family: 'Open Sans Condensed', sans-serif;
+	padding-top: 60px;
+}
+
+.navbar-default{
+	background: #ffffff;
+	border: none;
+}
+
+.navbar-default .navbar-nav > li > a {
+	font-size: 20px;
+	font-weight: 400;
+	color: #168e89;
+}
+
+.navbar-default .navbar-nav > li {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.navbar-default img {
+	width: 40px;
+	margin-top: -7px;
+}
+
+header {
+	background: url('../images/header.png');
+	background-position: 50% 50%;
+	background-size: 100%;
+	min-height: 100vh;
+
+}
+
+.new_visit_form {
+	margin-top: 150px;
+	margin-bottom: 50px;
+	background-color: #ffffff;
+	max-width: 450px;
+	color: #168e89;
+	font-size: 20px;
+
+}
+
+.form_content {
+	padding-left: 35px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.form_header {
+	font-size: 36px;
+}
+
+.form_header_content{
+	margin-bottom: 15px;
+}
+
+.line_below{
+	border-bottom: 3px solid #168e89;
+	
+}
+
+.select_type {
+	display: inline-block;
+	margin-top: 10px;
+}
+
+.select_arrow {
+	margin-top: 10px;
+}
+
+.line {
+	
+	height: 1px;
+	background-color: #168e89;
+	margin-right: 35px;
+
+}
+
+.confirm {
+	display: inline-block;
+	margin-top: 25px;
+	font-size: 36px;
+}
+
+.confirm_content{
+	margin-bottom: 15px;
+}
+
+.section_header{
+	font-size: 36px;
+	margin-top: 60px;
+	text-align: center;
+	color: #168e89;
+}
+
+.section_header_line{
+	height: 2px;
+	background-color: #168e89;
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	
+	
+}
+
+.box {
+	background-color: #168e89;
+	color: #ffffff;
+	margin-bottom: 30px;
+	padding: 20px 25px 25px 25px;
+	
+}
+
+.box_content {
+	margin-top: 10px;
+	font-size: 16px;
+}
+
+.box_header {
+	font-size: 24px;
+	font-weight: 100;
+}
+
+/*section 2*/
+.second {
+	font-size: 24px;
+}
+
+
+.additional_section_text {
+	color: #168e89;
+	margin-bottom: 30px;
+	font-size: 24px;
+	text-align: center;
+}
+
+.list_item {
+	font-size: 30px;
+	margin-top: 15px;
+}
+
+.third {
+	
+}
+
+.section_header_line_w_b_margin {
+	height: 2px;
+	background-color: #168e89;
+
+	margin-top: 20px;
+	width: 100%;
+}
+
+.team {
+	min-height: 90vh;
+	background-image: url("../images/team.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: relative;
+	
+}
+
+.team_context {
+	
+	margin: auto;
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+
+.team_text {
+	color: #168e89;
+	font-size: 36px;
+
+
+}
+
+
+.team_button {
+	margin-top: 15px;
+	background-color: #168e89;
+	border: none;
+	font-size: 26px;
+	padding: 7px 20px;
+	color: #ffffff;
+}
+
+footer {
+	background-color: #168e89;
+	padding-top: 40px;
+	color: white;
+	padding-bottom: 40px;
+}
+
+.contact_header {
+	font-size: 30px;
+	margin-left: 30px;
+}
+
+.contact_details {
+	margin-top: 15px;
+	margin-left: 30px;
+	font-size: 22px;
+}
+
+.modal-content {
+	border: none;
+	border-radius: 0px;
+	background-color: #168e89;
+}
+
+.login_header {
+	color: #ffffff;
+	font-size: 30px;
+	text-align: center;
+}
+
+.modal-body table {
+	width: 100%;
+}
+
+.modal-body table td {
+	text-align: center;
+}
+
+.modal-body table input {
+	width: 80%;
+	
+}
+
+.modal-header {
+	border: none;
+}
+
+.modal-dialog {
+	max-width: 400px;
+	
+}
+
+.modal-body {
+	font-size: 20px;
+}
+
+.btn, .btn:hover, .btn:active, .btn:visited {
+	background: transparent;
+	border: none;
+	color: #ffffff;
+}
+
+.btn:hover {
+	opacity: 0.8;
+}
+
+.login_submit {
+	font-size:30px;
+	margin-top: 20px;
+}
+
+.login_cancel, .login_forgotten {
+	font-size: 16px;
+	margin-top: -20px;
+}
+
+.new_user_header{
+	background-color: #168e89;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 30px;
+	color: #ffffff;
+}
+
+.new_user_basic_info, .new_user_additional_info, .new_user_submit {
+	background-color: #42a9a5;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 24px;
+	color: #ffffff;
+}
+
+.new_user_form .col-xs-12 {
+	font-size: 20px;
+}
+
+.new_user_form .col-xs-12 input{
+	border: none;
+	width: 100%;
+	border-bottom: 2px solid #168e89;
+	margin: 5px auto 5px auto;
+}
+
+.last_line {
+	margin-bottom: 30px;
+}
+
+.new_user_submit input{
+	background: transparent;
+	border: none;
+}
+
+.panel_box {
+	background-color: #168e89;
+	text-align: center;
+	height: 160px;
+}
+
+.panel_box img {
+	height: 100px;
+	margin-top: 28px;
+}
+
+.patients_list_row {
+	font-size: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}

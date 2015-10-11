@@ -1,0 +1,31 @@
+{{pesel}}
+<div ng-controller="PanelController">
+	<div ng-if="role=='superAdmin' || role=='admin' || role=='receptionist' || role=='doctor'" ng-controller="DoctorsListDetailsController">
+		<div class="new_user_header">
+			<div class="container">
+				<div class="col-xs-12">
+					Informacje o lekarzu
+				</div>
+			</div>
+		</div>
+		<div class="new_user_form">
+			<div class="container">
+				<div class="col-xs-12">
+					Pesel: {{user.pesel}}<br />	
+				</div>
+				<div class="col-xs-12">
+					E-mail: {{user.email}}<br />	
+				</div>
+				<div class="col-xs-12">
+					Imię: {{user.worker.doctor.name}}<br />	
+				</div>
+				<div class="col-xs-12 last_line">
+					Nazwisko: {{user.worker.doctor.surname}}<br />	
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+

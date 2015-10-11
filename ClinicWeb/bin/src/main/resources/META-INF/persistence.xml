@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+	
+	
+		<persistence-unit name="mysql1" transaction-type="JTA" >
+			<description>generated-persistence-unit</description>
+					<provider>org.hibernate.ejb.HibernatePersistence</provider>
+      			<class>com.eclinic.domain.Specialization</class>
+      			<class>com.eclinic.domain.Graphic</class>
+      			<class>com.eclinic.domain.TypeOfUser</class>
+      			<class>com.eclinic.domain.Recipe</class>
+      			<class>com.eclinic.domain.LoginHistory</class>
+      			<class>com.eclinic.domain.Worker</class>
+      			<class>com.eclinic.domain.Address</class>
+      			<class>com.eclinic.domain.Receptionist</class>
+      			<class>com.eclinic.domain.PatientCard</class>
+      			<class>com.eclinic.domain.TypeOfVisit</class>
+      			<class>com.eclinic.domain.Module</class>
+      			<class>com.eclinic.domain.SpecalVisitField</class>
+      			<class>com.eclinic.domain.VisitScheduler</class>
+      			<class>com.eclinic.domain.Doctor</class>
+      			<class>com.eclinic.domain.Report</class>
+      			<class>com.eclinic.domain.StatusOfVisit</class>
+      			<class>com.eclinic.domain.Patient</class>
+      			<class>com.eclinic.domain.SystemError</class>
+      			<class>com.eclinic.domain.Permission</class>
+      			<class>com.eclinic.domain.ApplicationParameter</class>
+      			<class>com.eclinic.domain.SickLeave</class>
+      			<class>com.eclinic.domain.SystemUser</class>
+      			<class>com.eclinic.domain.Visit</class>
+      			<class>com.eclinic.domain.Admin</class>
+   			<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		</persistence-unit>
+
+	
+</persistence>

@@ -1,0 +1,35 @@
+<div ng-controller="PanelController">
+	<div ng-if="role=='superAdmin' || role=='admin'" ng-controller="DoctorsListDetailsController">
+		<div ng-controller="EditDoctorController">
+			<div class="new_user_header">
+				<div class="container">
+					<div class="col-xs-12">
+						Edycja lekarza
+					</div>
+				</div>
+			</div>
+			<div class="new_user_form">
+				<div class="container">
+					<div class="col-xs-12">
+						Pesel: <input type="text" ng-model="user.pesel" /><br />	
+					</div>
+					<div class="col-xs-12">
+						E-mail: <input type="email" ng-model="user.email" /><br />	
+					</div>
+					<div class="col-xs-12">
+						Imię: <input type="text" ng-model="user.worker.doctor.name" /><br />	
+					</div>
+					<div class="col-xs-12 last_line">
+						Nazwisko: <input type="text" ng-model="user.worker.doctor.surname" /><br />	
+					</div>
+				</div>
+			</div>
+			<div class="new_user_submit">
+				<input type="submit" ng-click="editUser(doctor)" value="Zmień dane" />
+			</div>
+		</div>
+	</div>
+</div>
+
+
+

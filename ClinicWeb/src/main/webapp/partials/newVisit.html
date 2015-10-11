@@ -1,0 +1,25 @@
+<div ng-controller="NewVisitController">	
+	<div class="new_user_header">
+		<div class="container">
+			<div class="col-xs-12">
+				Nowa wizyta
+			</div>
+		</div>
+	</div>
+	<div class="new_user_form">
+		<div class="container">
+			<div class="col-xs-12">
+				Pesel: <input type="text" ng-model="patient_id" /><br />	
+			</div>
+			<div class="col-xs-12">
+				Identyfikator lekarza: <input type="text" ng-model="doctor_id" /><br />	
+			</div>
+			<div class="col-xs-12 last_line">
+				Data: <input type="text" ng-model="visit_date" /><br />	
+			</div>	
+		</div>
+	</div>
+	<div class="new_user_submit">
+		<input type="submit" ng-click="addVisit()" value="Dodaj" />
+	</div>
+</div>

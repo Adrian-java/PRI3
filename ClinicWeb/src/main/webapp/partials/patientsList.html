@@ -1,0 +1,72 @@
+<div ng-controller="PanelController">
+	<div ng-if="role=='superAdmin' || role=='admin' || role=='receptionist' || role=='doctor'" ng-controller="PatientsListController">
+		<div class="new_user_header">
+			<div class="container">
+				<div class="col-xs-12">
+					LISTA PACJENTÓW
+				</div>
+			</div>
+		</div>
+		<div class="new_user_basic_info">
+			<div class="container">
+			
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+						Pesel
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+						Imię
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+						Nazwisko
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+						Data urodzenia
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-8 col-lg-3">
+						Adres
+					</div>
+					<div class="col-xs-12 col-lg-1">
+						Wizyty
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	 
+		<div class="container">
+			<div ng-repeat="patient in patientsList">
+				<div class="row  patients_list_row" ng-if="patient.role=='patient'">
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+						<a ui-sref="patient_list_detail({ pesel: patient.pesel })">{{patient.pesel}}</a>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+						{{patient.worker.patient.name}}
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+						{{patient.worker.patient.surname}}
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+						{{patient.worker.patient.dateOfBirth}}
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-8 col-lg-3">
+						{{patient.worker.patient.address.city}}
+					</div>
+					<div class="col-xs-12 col-lg-1">
+						0
+					</div>
+					<div class="col-xs-12 col-lg-1">
+						<a ui-sref="edit_user({ pesel: patient.pesel })">Edytuj</a>
+					</div>
+					<div class="col-xs-12 col-lg-1">
+						<div ui-sref="remove_user({ pesel: patient.pesel })">Usuń</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+
+
